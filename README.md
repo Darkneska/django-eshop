@@ -1,2 +1,2 @@
 # django-eshop
-Django ecommerce focused on selling foods for example nuts, legumes, extracts from superfoods-All products are sold in 100 grams with possible returnable packaging. 
+Eshop focused on the sale of nutritional supplements. With the possibility of booking for an ongoing traning class
