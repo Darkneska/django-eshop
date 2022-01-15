@@ -1,0 +1,17 @@
+{% extends "homepage/home.html" %}
+{% load static %}
+{% block content %}
+    <div class="row">
+    {%  for product in products %}
+    <div class="col-lg-4">
+        <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <a href="#" class="btn btn-primary">Detail</a>
+  </div>
+</div>
+    </div>
+    {%  endfor %}
+    </div>
+{% endblock %}
