@@ -29,11 +29,39 @@
     }
 }
 
-.container-fluid{
-    color: #2C3349;
-    justify-content: center;
-    float: center;
+.navbar-brand{
+    text-align: center;
 }
+
+
+.navbar .navbar-bottom {
+  width: 100%;
+  background-color: #2C3349;
+  overflow: auto;
+}
+
+.navbar-bottom a {
+  float: right;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-bottom a:hover {
+  background-color: #000;
+}
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar-bottom a {
+        float: none;
+        display: block;
+    }
+}
+
 
  .image{
   position: relative;
@@ -47,13 +75,14 @@
     color: white;
     font-size: 50px;
 }
+
 .link-primary {
     border-style: solid;
     font-size: 20px;
 }
 
 footer {
-     position: fixed;
+     position: static;
      text-transform: uppercase;
      bottom:0;
      width:100%;

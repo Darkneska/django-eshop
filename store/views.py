@@ -2,12 +2,15 @@ from django.shortcuts import HttpResponse
 from django.shortcuts import render
 from .models import *
 
+
 def homepage(request):
     return render(request, 'homepage/home.html', {})
 
 
 def shop(request):
-    return render(request, 'homepage/shop.html', {})
+    products = Product.objects.all()
+    context = {'products': products}
+    return render(request, 'homepage/shop.html', context)
 
 
 def reservation(request):
@@ -18,3 +21,5 @@ def about(request):
     return render(request, 'homepage/about.html', {})
 
 
+def detail(request):
+    return render(request, 'homepage/detail.html', {})
