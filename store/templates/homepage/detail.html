@@ -3,67 +3,26 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'store/detail.css' %}">
+    <link rel="stylesheet" href="{% static 'store/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'store/owl.theme.default.css'%}">
+    <script type="text/javascript" src="{% static 'store/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'store/owl.carousel.js' %}"> </script>
     <script src="{% static 'store/detail.js' %}"></script>
     {% endblock %}
-<!DOCTYPE html>
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
 {% block content %}
-<body>
-<div class="owl-carousel">
-    <div class="item">
-      <a href="#">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
-      <div class="inner">
-        <a href="#">The Erling Bag</a>
-      </div>
-      </a>
-  </div>
-      <div class="item black">
-      <a href="#">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-      <div class="inner">
-        <a href="#">Summer Book Series</a>
-      </div>
-      </a>
-  </div>
-      <div class="item">
-      <a href="#">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
-      <div class="inner">
-        <a href="#">The Erling Bag</a>
-      </div>
-      </a>
-  </div>
-      <div class="item black">
-      <a href="#">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-      <div class="inner">
-        <a href="#">Summer Book Series</a>
-      </div>
-      </a>
-  </div>
-      <div class="item">
-      <a href="#">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
-      <div class="inner">
-        <a href="#">The Erling Bag</a>
-      </div>
-      </a>
-  </div>
-   <div class="item black">
-      <a href="#">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-      <div class="inner">
-        <a href="#">Summer Book Series</a>
-      </div>
-      </a>
-  </div>
+<div class="owl-carousel owl-theme">
+    <div class="item"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fnature&psig=AOvVaw3NEMKMTnfAtV9AMEqgsPY2&ust=1642503487028000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJia17fQuPUCFQAAAAAdAAAAABAX" class="img-fluid" alt="nature"><h4>2</h4></div>
+    <div class="item"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fnature&psig=AOvVaw3NEMKMTnfAtV9AMEqgsPY2&ust=1642503487028000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJia17fQuPUCFQAAAAAdAAAAABAX" class="img-fluid" alt="nature"><h4>3</h4></div>
+    <div class="item"><h4>4</h4></div>
+    <div class="item"><h4>5</h4></div>
+    <div class="item"><h4>6</h4></div>
+    <div class="item"><h4>7</h4></div>
+    <div class="item"><h4>8</h4></div>
+    <div class="item"><h4>9</h4></div>
+    <div class="item"><h4>10</h4></div>
+    <div class="item"><h4>11</h4></div>
 </div>
-{% endblock %}
-</body>
-</html>
+
+{% endblock content %}
+

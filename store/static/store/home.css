@@ -29,41 +29,8 @@
     }
 }
 
-.navbar-brand{
-    text-align: center;
-}
 
-
-.navbar .navbar-bottom {
-  width: 100%;
-  background-color: #2C3349;
-  overflow: auto;
-}
-
-.navbar-bottom a {
-  float: right;
-  text-align: center;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar-bottom a:hover {
-  background-color: #000;
-}
-
-
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-    .navbar-bottom a {
-        float: none;
-        display: block;
-    }
-}
-
-
- .image{
+.image{
   position: relative;
 }
 
@@ -91,4 +58,3 @@ footer {
      color: grey;
      font-size:12px;
 
- }
