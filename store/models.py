@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
+from django.template.defaultfilters import slugify
 
 
 # Customer login
@@ -20,11 +22,21 @@ class Product(models.Model):
     name = models.CharField(max_length=200)
     image = models.ImageField(null=True, blank=True)
     price = models.IntegerField(default=0, null=True, blank=True)
-    detail = models.TextField
+    detail = models.TextField(unique=True, null=True)
     status = models.BooleanField(default=True)
+    slug = models.SlugField(null=True, blank=True)
+    quantity = models.IntegerField(default=1)
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'slug': self.slug})
+
+    def save(self, *args, **kwargs):  # new
+        if not self.slug:
+            self.slug = slugify(self.name)
+        return super().save(*args, **kwargs)
 
     @property
     def imageURL(self):
@@ -33,6 +45,7 @@ class Product(models.Model):
             except:
                 url = ''
             return url
+
 
 
 # Order in Bag

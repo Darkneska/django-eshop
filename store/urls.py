@@ -7,8 +7,9 @@ urlpatterns = [
 	path('shop/', views.shop, name='shop'),
 	path('reservation/', views.reservation, name='reservation'),
 	path('about/', views.about, name='about'),
-	path('detail/', views.detail, name='detail'),
+	path('checkout/', views.detail, name='checkout'),
 	path('bag/', views.bag, name='bag'),
-	path('checkout/', views.checkout, name='checkout'),
+	path('product/<str:slug>', views.detail, name='detail'),
+
 
 ]
