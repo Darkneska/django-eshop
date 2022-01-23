@@ -11,5 +11,4 @@ urlpatterns = [
 	path('bag/', views.bag, name='bag'),
 	path('product/<str:slug>', views.detail, name='detail'),
 
-
 ]
